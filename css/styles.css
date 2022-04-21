@@ -152,12 +152,22 @@ ul {
     letter-spacing: 0.02em;
 }
 .contact-link {
-    color: var(--primary-text-color)
+    display: flex;
+    color: var(--primary-text-color);
 }
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--accent-color);
+.contact-link .icon-contact:hover,
+.contact-link .icon-contact:focus {
+    color: var(--primary-text-color); 
+    fill: var(--accent-color);
 }
+
+.icon-contact::before {
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+}
+
+
 
 /* Filter Portfolio */
 .filter {
@@ -462,9 +472,11 @@ ul {
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
-.masters-soc-icon.insta:hover {
+.masters-soc-link:hover .masters-soc-icon.insta  {
     fill: var(--primary-white-color);
 }
+
+
 /* Футер */
 .footer {
     background-color: var(--hero-bgd-color);
@@ -513,4 +525,23 @@ ul {
 .logo-down {
     display: inline-block;
     margin-bottom: 20px;
+}
+
+.joint {
+    display: flex;
+    
+    
+    
+}
+.joint-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.joint-list {
+    display: flex;
 }
