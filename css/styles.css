@@ -482,12 +482,11 @@ ul {
     fill: #AFB1B8;
 }
 
-.masters-soc-link:hover,
-.masters-soc-link:focus {
+.masters-soc-link:hover {
     background-color: var(--accent-color);
-    fill: var(--primary-white-color);
+    
 }
-.masters-soc-link:hover .masters-soc-icon  {
+.masters-soc-link:hover .masters-soc-icon {
     fill: var(--primary-white-color);
 }
 /* Наши клиенты */
@@ -508,8 +507,9 @@ ul {
     margin-bottom: 50px;
 }
 .client-list {
+    display: flex;
     margin-bottom: 94px;
-    justify-content: space-between;
+    
     
 }
 .client-link {
