@@ -489,7 +489,46 @@ ul {
 .masters-soc-link:hover .masters-soc-icon.insta  {
     fill: var(--primary-white-color);
 }
+/* Наши клиенты */
+.clients {
+    background-color: #fff;
+    
+}
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+.client-list {
+    outline: 1px solid red;
+    
+}
 
+.client-icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: var(#E5E5E5);
+    
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 94px;
+    
+    
+}
+.client-icon + .client-icon {
+    margin-right: 30px;
+}
 
 /* Футер */
 .footer {
@@ -499,6 +538,10 @@ ul {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer .container {
+    display: flex;
+    align-items: baseline;
 }
 .address {
     font-style: normal;
@@ -544,12 +587,15 @@ ul {
 }
 
 .join {
-    display: inline-block;
-    outline: 1px solid red;
-    
-    
+    display: inline-flex;
+    margin-left: 70px;
+    outline: 1px solid red;    
 }
-.join-list {
+.join .join-list {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.join .join-list {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
