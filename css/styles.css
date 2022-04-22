@@ -469,20 +469,23 @@ ul {
     margin-left: 10px;
 }
 .masters-soc-link {
-    width: 44px;
-    height: 44px;
-    background-color: var(--team-bgd-color);
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+        
     fill: var(--primary-white-color);
 }
 .masters-soc-icon {
     fill: #AFB1B8;
 }
 
-.masters-soc-link:hover {
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+    fill: var(--primary-white-color);
     background-color: var(--accent-color);
     
 }
@@ -515,19 +518,6 @@ ul {
 .client-link {
     border-color: #AFB1B8;
 }
-
-.client-link:hover {
-    border-color: var(--accent-color);
-
-}    
-.svg {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
-    color: #AFB1B8;
-}
-
 .client-icon {
     width: 170px;
     height: 92px;
@@ -535,11 +525,30 @@ ul {
     box-sizing: border-box;
     border-radius: 4px;
     background-color: var(#E5E5E5);
-    
+    fill: #AFB1B8;
     display: inline-block;
-    
- 
 }
+.use {
+    fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+.client-link:hover .use {
+    fill: var(--accent-color);
+}
+
+.svg {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+    
+}
+
+
 .client-icon + .client-icon {
     margin-left: 30px;
     
@@ -565,11 +574,15 @@ ul {
 .footer .container {
     display: flex;
     align-items: baseline;
+    outline: 1px solid red;
+}
+.footer-container {
+    outline: 1px solid red;
 }
 .address {
     font-style: normal;
 }
-.address {
+.address-list {
     display: inline-block;
     outline: 1px solid red;
     
@@ -601,7 +614,9 @@ ul {
     margin-bottom: 30px;
 }
 .contact-item:hover,
-.contact-item:focus {
+.contact-item:focus,
+.city:hover,
+.city:focus {
     color: var(--accent-color);
 }
 .logo-down {
@@ -629,6 +644,4 @@ ul {
     padding-top: 72px;
     margin-bottom: 20px;
 }
-.join-soc-icon {
-    
-}
+
