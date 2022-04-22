@@ -574,17 +574,17 @@ ul {
 .footer .container {
     display: flex;
     align-items: baseline;
-    outline: 1px solid red;
+    
 }
 .footer-container {
-    outline: 1px solid red;
+    
 }
 .address {
     font-style: normal;
 }
 .address-list {
     display: inline-block;
-    outline: 1px solid red;
+    
     
 }
 .address .adr + .adr {
@@ -625,12 +625,12 @@ ul {
     display: inline-block;
     margin-bottom: 20px;
     margin-right: 156px;
-    outline: 1px solid red;
+    
 }
 .social {
     
     margin-left: 70px;
-    outline: 1px solid red;    
+       
 }
 .join-list {
     font-weight: 700;
