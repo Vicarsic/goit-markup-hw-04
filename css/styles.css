@@ -19,7 +19,7 @@
     --team-bgd-color: #F5F4FA;
     --contact-color: rgba(255, 255, 255, 0.6);
     --backgrcolor: rgba(255, 255, 255, 0.1)
-    --border-button-color: #ececec;
+    --border-button-color: #ECECEC;
     --background-color: #E5E5E5;
     --border-color: #EEEEEE;
     --bgcolor: #C4C4C4;
@@ -77,21 +77,16 @@ ul {
     padding-top: 0;
     padding-bottom: 0;
 }
-.logo-blue {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
+
 .logo {
     display: inline-block;
 }
-
 .hader .container {
     display: flex;
     align-items: center;
 }
 .hader {
-    border-bottom: 1px solid var(--border-button-color);
+    border-bottom: 1px solid #ECECEC;
 }
 .site-nav-item {
     margin-right: 50px;
@@ -135,6 +130,11 @@ ul {
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
+.logo-blue.link {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .logo-black {
     font-family: inherit;
@@ -145,8 +145,6 @@ ul {
     font-family: inherit;
     color: var(--primary-white-color);
 }
-
-
 .link:hover,
 .link:focus {
     color: var(--accent-color); 
@@ -155,7 +153,6 @@ ul {
 .site-nav .link .list-current {
     color: var(--accent-color);
 }
-
 .contact {
     font-weight: 500;
     font-size: 14px;
@@ -172,11 +169,9 @@ ul {
     color: var(--primary-text-color); 
     fill: var(--accent-color);
 }
-
 .icon-contact::before {
     display: flex;
-    align-items: center;
-    
+    align-items: center;    
 }
 .icon-contact {
     margin-right: 10px;
@@ -241,15 +236,17 @@ ul {
 .pic {
     width: 370px;    
 }
-.pic:hover,
-.pic:focus { 
+.card {
+    display: block;
+}
+.card:hover,
+.card:focus { 
     background-color: var(--primary-white-color);
     border: 1px solid var(--border-color);
     box-sizing: border-box;
     box-shadow: 0px 1px 1px var(--boxshadow-three),
     0px 4px 4px var(--boxshadow-four),
     1px 4px 6px var(--boxshadow-five);
-    
 }
 .project.list .pic {
     display: block;
@@ -276,6 +273,7 @@ ul {
     url(../images/hero-bgo.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
@@ -327,6 +325,27 @@ ul {
 .button:focus {
     background-color: var(--primary-text-color) ;
 }
+.but .one {
+    width: 73px;
+    height: 38px;
+}
+.but .two {
+    width: 128px;
+    height: 38px;
+}
+.but .three {
+    width: 145px;
+    height: 38px;
+}
+.but .four {
+    width: 103px;
+    height: 38px;
+}
+.but .five {
+    width: 130px;
+    height: 38px;
+}
+
 /* Преимущества */
 
 .section {
@@ -442,6 +461,7 @@ ul {
 }
 
 /* Наша команда */
+
 .section-team {
     background-color: var(--team-bgd-color);    
 }
@@ -467,8 +487,8 @@ ul {
     margin-right: 0;
 }
 .our {
-    margin-top: 30px;
-    margin-bottom: 30px;    
+    padding-top: 30px;
+    padding-bottom: 30px;    
 }
 
 .name {
@@ -515,7 +535,22 @@ ul {
 .masters-soc-link:hover .masters-soc-icon {
     fill: var(--primary-white-color);
 }
+.masters-soc-link:focus .masters-soc-icon {
+    fill: var(--primary-white-color);
+}
+.masters-soc-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+    
+
+.staff {
+    background-color: var(--primary-white-color);
+}
+
+
 /* Наши клиенты */
+
 .clients {
     background-color: var(--primary-white-color);
     
@@ -528,45 +563,44 @@ ul {
     letter-spacing: 0.03em;
     
     color: var(--title-text-color);
-    
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .client-list {
     display: flex;
-    margin-bottom: 94px;
     
     
 }
 .client-link {
     border-color: var(--icon-color);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    display: flex;
 }
 .client-icon {
     width: 170px;
     height: 92px;
     border: 1px solid var(--icon-color);
-    box-sizing: border-box;
     border-radius: 4px;
-    background-color: transparent;
-    fill: var(--icon-color);
-    display: inline-block;
 }
-.use {
-    fill: var(--icon-color);
+
+.svg {
+    fill: var(--icon-color)
 }
 .client-link:hover,
 .client-link:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
-.client-link:hover .use {
+.client-link:hover .svg {
     fill: var(--accent-color);
-}
-.svg {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;    
+    border-color: var(--accent-color);
+    
 }
 .client-icon + .client-icon {
     margin-left: 30px;   
@@ -632,11 +666,9 @@ ul {
     color: var(--accent-color);
 }
 .logo-down {
-    width: 145px;
-    height: 31px;
     display: inline-block;
     margin-bottom: 20px;
-    margin-right: 156px;    
+      
 }
 .social {
     margin-left: 70px;       
@@ -650,7 +682,6 @@ ul {
     
     color: var(--primary-white-color);
     display: flex;
-    padding-top: 72px;
     margin-bottom: 20px;
 }
 
